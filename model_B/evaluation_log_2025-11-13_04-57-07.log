@@ -1,0 +1,41 @@
+2025-11-13 04:57:07,933 [INFO] - --- Starting Walk-Forward Evaluation ---
+2025-11-13 04:57:07,933 [INFO] - Using device: cuda
+2025-11-13 04:57:07,934 [INFO] - Loading data from: btcusdt_options_call_V2\real_btcusdt_implied_params_mlp\run_4\btc_option_parameters_169.csv
+2025-11-13 04:57:07,934 [INFO] - Loading models from: btcusdt_options_call_V2\model_B
+2025-11-13 04:57:07,934 [INFO] - Saving results to: btcusdt_options_call_V2\model_B
+2025-11-13 04:57:07,939 [INFO] - Loaded 169 data points (Index 0-168).
+2025-11-13 04:57:07,939 [INFO] - 
+--- Starting 10-Step Walk-Forward Prediction ---
+2025-11-13 04:57:07,939 [INFO] - Step 1/10: Loading 'pinn_model159.pth' to predict point 160 (Index 159)...
+2025-11-13 04:57:08,160 [INFO] -   -> Predicted: 1400.9430, Actual: 930.0000
+2025-11-13 04:57:08,160 [INFO] - Step 2/10: Loading 'pinn_model160.pth' to predict point 161 (Index 160)...
+2025-11-13 04:57:08,174 [INFO] -   -> Predicted: 947.4415, Actual: 1450.0000
+2025-11-13 04:57:08,174 [INFO] - Step 3/10: Loading 'pinn_model161.pth' to predict point 162 (Index 161)...
+2025-11-13 04:57:08,188 [INFO] -   -> Predicted: 1421.7638, Actual: 1450.0000
+2025-11-13 04:57:08,188 [INFO] - Step 4/10: Loading 'pinn_model162.pth' to predict point 163 (Index 162)...
+2025-11-13 04:57:08,203 [INFO] -   -> Predicted: 1415.4335, Actual: 1210.0000
+2025-11-13 04:57:08,203 [INFO] - Step 5/10: Loading 'pinn_model163.pth' to predict point 164 (Index 163)...
+2025-11-13 04:57:08,215 [INFO] -   -> Predicted: 1230.5365, Actual: 1090.0000
+2025-11-13 04:57:08,215 [INFO] - Step 6/10: Loading 'pinn_model164.pth' to predict point 165 (Index 164)...
+2025-11-13 04:57:08,227 [INFO] -   -> Predicted: 1076.2855, Actual: 1070.0000
+2025-11-13 04:57:08,228 [INFO] - Step 7/10: Loading 'pinn_model165.pth' to predict point 166 (Index 165)...
+2025-11-13 04:57:08,240 [INFO] -   -> Predicted: 964.2608, Actual: 1070.0000
+2025-11-13 04:57:08,240 [INFO] - Step 8/10: Loading 'pinn_model166.pth' to predict point 167 (Index 166)...
+2025-11-13 04:57:08,253 [INFO] -   -> Predicted: 1048.1612, Actual: 760.0000
+2025-11-13 04:57:08,253 [INFO] - Step 9/10: Loading 'pinn_model167.pth' to predict point 168 (Index 167)...
+2025-11-13 04:57:08,267 [INFO] -   -> Predicted: 734.7083, Actual: 760.0000
+2025-11-13 04:57:08,267 [INFO] - Step 10/10: Loading 'pinn_model168.pth' to predict point 169 (Index 168)...
+2025-11-13 04:57:08,281 [INFO] -   -> Predicted: 794.5419, Actual: 760.0000
+2025-11-13 04:57:08,281 [INFO] - --- Walk-Forward Prediction Finished ---
+2025-11-13 04:57:08,281 [INFO] - 
+--- Forecast Performance (10 Points) ---
+2025-11-13 04:57:08,281 [INFO] - RMSE: 251.6333
+2025-11-13 04:57:08,281 [INFO] - Correlation (R): 0.4906
+2025-11-13 04:57:08,281 [INFO] - --------------------------------------
+2025-11-13 04:57:08,285 [INFO] - Forecast results CSV saved to: btcusdt_options_call_V2\model_B\walk_forward_forecast_results.csv
+2025-11-13 04:57:08,285 [INFO] - 
+--- Predicting Historical Part (Points 1-159) ---
+2025-11-13 04:57:08,314 [INFO] - Successfully predicted 159 historical points using 'pinn_model169.pth'.
+2025-11-13 04:57:08,314 [INFO] - Generating final comparison plot...
+2025-11-13 04:57:09,153 [INFO] - Comparison plot saved to: btcusdt_options_call_V2\model_B\walk_forward_comparison_plot.png
+2025-11-13 04:57:09,154 [INFO] - --- Evaluation script finished ---
