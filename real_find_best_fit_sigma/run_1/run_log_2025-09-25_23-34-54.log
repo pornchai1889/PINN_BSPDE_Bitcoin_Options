@@ -1,0 +1,26 @@
+2025-09-25 23:34:54,865 [INFO] - Results will be saved in: btcusdt_options_call_V2\real_find_best_fit_sigma\run_1
+2025-09-25 23:34:54,884 [INFO] - --- Hyperparameters ---
+2025-09-25 23:34:54,884 [INFO] - fixed_r: 0.05
+2025-09-25 23:34:54,884 [INFO] - learning_rate: 0.001
+2025-09-25 23:34:54,884 [INFO] - epochs: 10000
+2025-09-25 23:34:54,884 [INFO] - data_path: btcusdt_options_call_V2\klines\BTC-250914-116000-C_Daily_15m.csv
+2025-09-25 23:34:54,885 [INFO] - -----------------------
+2025-09-25 23:34:54,892 [INFO] - Data loaded successfully from btcusdt_options_call_V2\klines\BTC-250914-116000-C_Daily_15m.csv. Shape: (97, 16)
+2025-09-25 23:34:56,480 [INFO] - Initial sigma: 0.8000
+2025-09-25 23:34:56,481 [INFO] - Starting optimization...
+2025-09-25 23:35:00,459 [INFO] - Epoch [1000/10000], Loss: 0.92501307, sigma: 0.2109
+2025-09-25 23:35:04,193 [INFO] - Epoch [2000/10000], Loss: 0.06674358, sigma: 0.1532
+2025-09-25 23:35:08,188 [INFO] - Epoch [3000/10000], Loss: 0.06669305, sigma: 0.1528
+2025-09-25 23:35:12,186 [INFO] - Epoch [4000/10000], Loss: 0.06669332, sigma: 0.1528
+2025-09-25 23:35:16,079 [INFO] - Epoch [5000/10000], Loss: 0.06669108, sigma: 0.1528
+2025-09-25 23:35:19,919 [INFO] - Epoch [6000/10000], Loss: 0.06669103, sigma: 0.1528
+2025-09-25 23:35:24,139 [INFO] - Epoch [7000/10000], Loss: 0.06669103, sigma: 0.1528
+2025-09-25 23:35:28,209 [INFO] - Epoch [8000/10000], Loss: 0.06669103, sigma: 0.1528
+2025-09-25 23:35:32,127 [INFO] - Epoch [9000/10000], Loss: 0.06669103, sigma: 0.1528
+2025-09-25 23:35:36,207 [INFO] - Epoch [10000/10000], Loss: 0.06669103, sigma: 0.1528
+2025-09-25 23:35:36,208 [INFO] - Optimization finished.
+2025-09-25 23:35:36,208 [INFO] - --- Best-fit Constant Parameters ---
+2025-09-25 23:35:36,208 [INFO] - Fixed r: 0.050000
+2025-09-25 23:35:36,208 [INFO] - Final Best-fit sigma: 0.152793
+2025-09-25 23:35:36,208 [INFO] - ------------------------------------
+2025-09-25 23:35:37,406 [INFO] - Process completed. All artifacts are in btcusdt_options_call_V2\real_find_best_fit_sigma\run_1
