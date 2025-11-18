@@ -1,0 +1,36 @@
+2025-09-25 23:25:02,565 [INFO] - Results will be saved in: btcusdt_options_call_V2\real_find_best_fit_constant_params\run_1
+2025-09-25 23:25:02,592 [INFO] - --- Hyperparameters ---
+2025-09-25 23:25:02,593 [INFO] - learning_rate: 0.001
+2025-09-25 23:25:02,593 [INFO] - epochs: 20000
+2025-09-25 23:25:02,593 [INFO] - data_path: btcusdt_options_call_V2\klines\BTC-250914-116000-C_Daily_15m.csv
+2025-09-25 23:25:02,593 [INFO] - -----------------------
+2025-09-25 23:25:02,600 [INFO] - Data loaded successfully from btcusdt_options_call_V2\klines\BTC-250914-116000-C_Daily_15m.csv. Shape: (97, 16)
+2025-09-25 23:25:04,394 [INFO] - Initial r: 0.0500, Initial sigma: 0.8000
+2025-09-25 23:25:04,394 [INFO] - Starting optimization...
+2025-09-25 23:25:08,741 [INFO] - Epoch [1000/20000], Loss: 0.70409477, r: -0.5068, sigma: 0.2293
+2025-09-25 23:25:13,080 [INFO] - Epoch [2000/20000], Loss: 0.05457762, r: -0.5506, sigma: 0.1803
+2025-09-25 23:25:17,410 [INFO] - Epoch [3000/20000], Loss: 0.05455463, r: -0.5509, sigma: 0.1800
+2025-09-25 23:25:21,627 [INFO] - Epoch [4000/20000], Loss: 0.05455305, r: -0.5509, sigma: 0.1800
+2025-09-25 23:25:25,758 [INFO] - Epoch [5000/20000], Loss: 0.05455142, r: -0.5508, sigma: 0.1800
+2025-09-25 23:25:30,103 [INFO] - Epoch [6000/20000], Loss: 0.05455336, r: -0.5507, sigma: 0.1800
+2025-09-25 23:25:34,383 [INFO] - Epoch [7000/20000], Loss: 0.05455277, r: -0.5506, sigma: 0.1800
+2025-09-25 23:25:38,707 [INFO] - Epoch [8000/20000], Loss: 0.05455183, r: -0.5505, sigma: 0.1800
+2025-09-25 23:25:42,882 [INFO] - Epoch [9000/20000], Loss: 0.05455056, r: -0.5503, sigma: 0.1800
+2025-09-25 23:25:47,361 [INFO] - Epoch [10000/20000], Loss: 0.05455422, r: -0.5501, sigma: 0.1799
+2025-09-25 23:25:51,585 [INFO] - Epoch [11000/20000], Loss: 0.05455138, r: -0.5500, sigma: 0.1799
+2025-09-25 23:25:55,807 [INFO] - Epoch [12000/20000], Loss: 0.05455345, r: -0.5500, sigma: 0.1799
+2025-09-25 23:26:00,070 [INFO] - Epoch [13000/20000], Loss: 0.05455441, r: -0.5500, sigma: 0.1799
+2025-09-25 23:26:04,483 [INFO] - Epoch [14000/20000], Loss: 0.05455441, r: -0.5500, sigma: 0.1799
+2025-09-25 23:26:08,762 [INFO] - Epoch [15000/20000], Loss: 0.05455441, r: -0.5500, sigma: 0.1799
+2025-09-25 23:26:12,904 [INFO] - Epoch [16000/20000], Loss: 0.05455441, r: -0.5500, sigma: 0.1799
+2025-09-25 23:26:17,130 [INFO] - Epoch [17000/20000], Loss: 0.05455371, r: -0.5499, sigma: 0.1799
+2025-09-25 23:26:21,385 [INFO] - Epoch [18000/20000], Loss: 0.05455391, r: -0.5499, sigma: 0.1799
+2025-09-25 23:26:25,655 [INFO] - Epoch [19000/20000], Loss: 0.05455254, r: -0.5499, sigma: 0.1799
+2025-09-25 23:26:30,093 [INFO] - Epoch [20000/20000], Loss: 0.05455317, r: -0.5499, sigma: 0.1799
+2025-09-25 23:26:30,094 [INFO] - Optimization finished.
+2025-09-25 23:26:30,094 [INFO] - --- Best-fit Constant Parameters ---
+2025-09-25 23:26:30,094 [INFO] - Final Best-fit r: -0.549941
+2025-09-25 23:26:30,094 [INFO] - Final Best-fit sigma: 0.179942
+2025-09-25 23:26:30,094 [INFO] - ------------------------------------
+2025-09-25 23:26:30,094 [INFO] - Generating plots...
+2025-09-25 23:26:31,372 [INFO] - Process completed. All artifacts are in btcusdt_options_call_V2\real_find_best_fit_constant_params\run_1
