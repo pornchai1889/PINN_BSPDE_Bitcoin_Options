@@ -1,0 +1,69 @@
+2025-11-13 01:45:36,007 [INFO] - Results will be saved in: btcusdt_options_call_V2\real_btcusdt_call_pricing_mlp_6inputs\result_10
+2025-11-13 01:45:36,025 [INFO] - --- Hyperparameters ---
+2025-11-13 01:45:36,025 [INFO] - n_layers: 8
+2025-11-13 01:45:36,026 [INFO] - n_hidden: 128
+2025-11-13 01:45:36,026 [INFO] - learning_rate: 1e-05
+2025-11-13 01:45:36,026 [INFO] - epochs: 40000
+2025-11-13 01:45:36,026 [INFO] - warmup_epochs: 5000
+2025-11-13 01:45:36,026 [INFO] - annealing_epochs: 10000
+2025-11-13 01:45:36,026 [INFO] - pde_weight_target: 1e-06
+2025-11-13 01:45:36,026 [INFO] - data_path: btcusdt_options_call_V2\real_btcusdt_implied_params_mlp\run_4\btc_option_parameters_160.csv
+2025-11-13 01:45:36,027 [INFO] - -----------------------
+2025-11-13 01:45:36,033 [INFO] - Data loaded from btcusdt_options_call_V2\real_btcusdt_implied_params_mlp\run_4\btc_option_parameters_160.csv. Shape: (160, 12)
+2025-11-13 01:45:36,205 [INFO] - Successfully loaded pretrained model for fine-tuning from: btcusdt_options_call_V2\real_btcusdt_call_pricing_mlp_6inputs\result_9\pinn_model159.pth
+2025-11-13 01:45:37,646 [INFO] - Model Architecture:
+PINN(
+  (layers): ModuleList(
+    (0): Linear(in_features=6, out_features=128, bias=True)
+    (1-7): 7 x Linear(in_features=128, out_features=128, bias=True)
+    (8): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+2025-11-13 01:45:37,646 [INFO] - Starting training (fine-tuning)...
+2025-11-13 01:45:42,045 [INFO] - Epoch [1000/40000], Data Loss: 0.000277, PDE Loss: 0.000000, Current Weight: 0.00e+00, Total Loss: 0.000277
+2025-11-13 01:45:46,303 [INFO] - Epoch [2000/40000], Data Loss: 0.000107, PDE Loss: 0.000000, Current Weight: 0.00e+00, Total Loss: 0.000107
+2025-11-13 01:45:50,481 [INFO] - Epoch [3000/40000], Data Loss: 0.000072, PDE Loss: 0.000000, Current Weight: 0.00e+00, Total Loss: 0.000072
+2025-11-13 01:45:54,789 [INFO] - Epoch [4000/40000], Data Loss: 0.000069, PDE Loss: 0.000000, Current Weight: 0.00e+00, Total Loss: 0.000069
+2025-11-13 01:45:58,995 [INFO] - Epoch [5000/40000], Data Loss: 0.000046, PDE Loss: 0.000000, Current Weight: 0.00e+00, Total Loss: 0.000046
+2025-11-13 01:46:24,079 [INFO] - Epoch [6000/40000], Data Loss: 0.000716, PDE Loss: 9825.299805, Current Weight: 9.99e-08, Total Loss: 0.001698
+2025-11-13 01:46:49,427 [INFO] - Epoch [7000/40000], Data Loss: 0.000596, PDE Loss: 5158.673340, Current Weight: 2.00e-07, Total Loss: 0.001627
+2025-11-13 01:47:14,521 [INFO] - Epoch [8000/40000], Data Loss: 0.000574, PDE Loss: 3334.746826, Current Weight: 3.00e-07, Total Loss: 0.001574
+2025-11-13 01:47:39,417 [INFO] - Epoch [9000/40000], Data Loss: 0.000576, PDE Loss: 3422.166504, Current Weight: 4.00e-07, Total Loss: 0.001944
+2025-11-13 01:48:04,417 [INFO] - Epoch [10000/40000], Data Loss: 0.000570, PDE Loss: 1815.680298, Current Weight: 5.00e-07, Total Loss: 0.001478
+2025-11-13 01:48:29,263 [INFO] - Epoch [11000/40000], Data Loss: 0.000577, PDE Loss: 1470.317993, Current Weight: 6.00e-07, Total Loss: 0.001459
+2025-11-13 01:48:54,114 [INFO] - Epoch [12000/40000], Data Loss: 0.000570, PDE Loss: 1235.513916, Current Weight: 7.00e-07, Total Loss: 0.001435
+2025-11-13 01:49:19,168 [INFO] - Epoch [13000/40000], Data Loss: 0.000587, PDE Loss: 1070.238892, Current Weight: 8.00e-07, Total Loss: 0.001443
+2025-11-13 01:49:44,331 [INFO] - Epoch [14000/40000], Data Loss: 0.000584, PDE Loss: 922.475281, Current Weight: 9.00e-07, Total Loss: 0.001414
+2025-11-13 01:50:09,598 [INFO] - Epoch [15000/40000], Data Loss: 0.000599, PDE Loss: 819.800232, Current Weight: 1.00e-06, Total Loss: 0.001419
+2025-11-13 01:50:34,533 [INFO] - Epoch [16000/40000], Data Loss: 0.000568, PDE Loss: 757.669006, Current Weight: 1.00e-06, Total Loss: 0.001326
+2025-11-13 01:50:59,576 [INFO] - Epoch [17000/40000], Data Loss: 0.000561, PDE Loss: 697.586609, Current Weight: 1.00e-06, Total Loss: 0.001258
+2025-11-13 01:51:24,647 [INFO] - Epoch [18000/40000], Data Loss: 0.000562, PDE Loss: 649.615662, Current Weight: 1.00e-06, Total Loss: 0.001211
+2025-11-13 01:51:49,544 [INFO] - Epoch [19000/40000], Data Loss: 0.000544, PDE Loss: 607.581177, Current Weight: 1.00e-06, Total Loss: 0.001151
+2025-11-13 01:52:14,148 [INFO] - Epoch [20000/40000], Data Loss: 0.000538, PDE Loss: 572.278503, Current Weight: 1.00e-06, Total Loss: 0.001111
+2025-11-13 01:52:39,057 [INFO] - Epoch [21000/40000], Data Loss: 0.000565, PDE Loss: 531.075012, Current Weight: 1.00e-06, Total Loss: 0.001096
+2025-11-13 01:53:04,239 [INFO] - Epoch [22000/40000], Data Loss: 0.000519, PDE Loss: 515.142456, Current Weight: 1.00e-06, Total Loss: 0.001034
+2025-11-13 01:53:29,171 [INFO] - Epoch [23000/40000], Data Loss: 0.000527, PDE Loss: 485.599121, Current Weight: 1.00e-06, Total Loss: 0.001013
+2025-11-13 01:53:54,523 [INFO] - Epoch [24000/40000], Data Loss: 0.000501, PDE Loss: 591.706421, Current Weight: 1.00e-06, Total Loss: 0.001093
+2025-11-13 01:54:19,726 [INFO] - Epoch [25000/40000], Data Loss: 0.000508, PDE Loss: 446.183502, Current Weight: 1.00e-06, Total Loss: 0.000954
+2025-11-13 01:54:44,829 [INFO] - Epoch [26000/40000], Data Loss: 0.000486, PDE Loss: 6840.671875, Current Weight: 1.00e-06, Total Loss: 0.007327
+2025-11-13 01:55:09,803 [INFO] - Epoch [27000/40000], Data Loss: 0.000486, PDE Loss: 413.708954, Current Weight: 1.00e-06, Total Loss: 0.000900
+2025-11-13 01:55:34,658 [INFO] - Epoch [28000/40000], Data Loss: 0.000508, PDE Loss: 203121.734375, Current Weight: 1.00e-06, Total Loss: 0.203630
+2025-11-13 01:56:00,476 [INFO] - Epoch [29000/40000], Data Loss: 0.000471, PDE Loss: 390.999725, Current Weight: 1.00e-06, Total Loss: 0.000862
+2025-11-13 01:56:25,235 [INFO] - Epoch [30000/40000], Data Loss: 0.000464, PDE Loss: 378.166595, Current Weight: 1.00e-06, Total Loss: 0.000842
+2025-11-13 01:56:50,472 [INFO] - Epoch [31000/40000], Data Loss: 0.000508, PDE Loss: 362.554443, Current Weight: 1.00e-06, Total Loss: 0.000871
+2025-11-13 01:57:15,398 [INFO] - Epoch [32000/40000], Data Loss: 0.000452, PDE Loss: 357.953613, Current Weight: 1.00e-06, Total Loss: 0.000810
+2025-11-13 01:57:40,248 [INFO] - Epoch [33000/40000], Data Loss: 0.000503, PDE Loss: 398.825531, Current Weight: 1.00e-06, Total Loss: 0.000901
+2025-11-13 01:58:05,404 [INFO] - Epoch [34000/40000], Data Loss: 0.000443, PDE Loss: 339.118896, Current Weight: 1.00e-06, Total Loss: 0.000782
+2025-11-13 01:58:30,643 [INFO] - Epoch [35000/40000], Data Loss: 0.000452, PDE Loss: 327.197205, Current Weight: 1.00e-06, Total Loss: 0.000779
+2025-11-13 01:58:55,441 [INFO] - Epoch [36000/40000], Data Loss: 0.000427, PDE Loss: 325.682526, Current Weight: 1.00e-06, Total Loss: 0.000753
+2025-11-13 01:59:20,659 [INFO] - Epoch [37000/40000], Data Loss: 0.000446, PDE Loss: 312.867645, Current Weight: 1.00e-06, Total Loss: 0.000758
+2025-11-13 01:59:45,684 [INFO] - Epoch [38000/40000], Data Loss: 0.000421, PDE Loss: 311.203430, Current Weight: 1.00e-06, Total Loss: 0.000732
+2025-11-13 02:00:10,967 [INFO] - Epoch [39000/40000], Data Loss: 0.000568, PDE Loss: 133680.562500, Current Weight: 1.00e-06, Total Loss: 0.134249
+2025-11-13 02:00:35,998 [INFO] - Epoch [40000/40000], Data Loss: 0.000421, PDE Loss: 294.995636, Current Weight: 1.00e-06, Total Loss: 0.000716
+2025-11-13 02:00:35,998 [INFO] - Training finished.
+2025-11-13 02:00:36,361 [INFO] - Model saved to btcusdt_options_call_V2\real_btcusdt_call_pricing_mlp_6inputs\result_10\pinn_model.pth
+2025-11-13 02:00:36,365 [INFO] - Generating plots...
+2025-11-13 02:00:36,373 [INFO] - Final Metrics -> RMSE: 6.4650, Correlation: 0.9998
+2025-11-13 02:00:38,663 [INFO] - Generated 'Market vs. PINN Price Comparison' plot.
+2025-11-13 02:00:39,686 [INFO] - All plots generated successfully.
+2025-11-13 02:00:39,687 [INFO] - Process completed. All artifacts are in btcusdt_options_call_V2\real_btcusdt_call_pricing_mlp_6inputs\result_10
